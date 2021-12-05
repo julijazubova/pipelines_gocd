@@ -42,6 +42,8 @@ pipelines:
               tasks: *deploy-tasks
       
       - test-dev:
+          environment_variables:
+            ENV_NAME: dev
           jobs:
             build:
               tasks: *test-tasks
@@ -56,6 +58,8 @@ pipelines:
 
 
       - test-int:
+          environment_variables:
+            ENV_NAME: int
           jobs:
             build:
               tasks: *test-tasks
@@ -69,6 +73,8 @@ pipelines:
               tasks: *deploy-tasks
         
       - test-prd:
+          environment_variables:
+            ENV_NAME: prd
           jobs:
             build:
               tasks: *test-tasks
