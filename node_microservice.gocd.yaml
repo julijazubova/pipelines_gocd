@@ -12,6 +12,7 @@ common:
 pipelines:
   node-microservice:
     group: microservices
+    branch: main
     materials:
       gitrepo:
         git: https://github.com/julijazubova/ci_course.git
