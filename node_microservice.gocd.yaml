@@ -6,6 +6,7 @@ pipelines:
     materials:
       gitrepo:
         git: https://github.com/julijazubova/ci_course.git
+        branch: main
     stages:
       - build:
           jobs:
