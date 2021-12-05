@@ -58,6 +58,9 @@ pipelines:
       gitrepo:
         git: https://github.com/julijazubova/ci_course.git
         branch: main
+      testmaterial:
+        pipeline: New_Pipeline
+        stage: Test
     stages:
       - build:
           jobs:
